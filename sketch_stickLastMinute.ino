@@ -23,10 +23,22 @@ int mapY = 0;
 float x_coord = 0;
 float y_coord = 0;
 int sensitivity = 15;
+
 int x_coord_min = 20;
 int x_coord_max = 40;
 int y_coord_min = 20;
 int y_coord_max = 40;
+/*
+//This block of code below is an alternative to the above block, with the aim being
+//to create a random x/y-coord target range upon startup each time.
+//If this is indeed used, delete the above block as well as this paragraph.
+//Note that this code has not been tested. Test it and tweak it if necessary.
+//You will need the device to do this.
+int x_coord_min = random(-50, 50);
+int x_coord_max = random(-50, 50);
+int y_coord_min = random(-50, 50);
+int y_coord_max = random(-50, 50);
+*/
 
 void setup() {
  Serial.begin(9600);
